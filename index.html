@@ -7,7 +7,24 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>ETCH-A-SKETCH</h1>
     <div id="bigContainer"></div>
+    <div id="optionsContainer">
+        <label for="grid-sizes">Grid Size</label>
+            <select id="grid-sizes">
+                <option value="8x8">8x8</option>
+                <option value="16x16">16x16</option>
+                <option value="32x32">32x32</option>
+                <option value="64x64">64x64</option>
+            </select>
+    </div>
     <button>Reset</button>
+    <script>
+    let optionsContainer = document.querySelector('#optionsContainer')
+    optionsContainer.setAttribute('style', 'text-align:center')
+        for (const child of optionsContainer.children){
+            child.setAttribute('style', 'text-align:center;font-size: 35px; margin-top:35px;border-radius:5px')
+        }
+    </script>
 </body>
 </html>
