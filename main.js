@@ -13,7 +13,7 @@ function gridSize(num, width, height){
     let cells = document.querySelectorAll('.cell');
     cells.forEach(function(cell){
         cell.addEventListener('mouseover', function(e){
-            cell.style.background="teal";
+            cell.style.background="#000";
         })
     })
     let resetBtn = document.querySelector('button')
